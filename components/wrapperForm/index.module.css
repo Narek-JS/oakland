@@ -1,0 +1,14 @@
+.wrapperForm {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.rightContent {
+    max-width: 640px;
+}
+
+.rowRivers {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}

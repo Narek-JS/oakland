@@ -1,0 +1,47 @@
+.section {
+    padding: 0 0 50px 0;
+    background-color: #001D4A;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 80px;
+    color: #32C1EA;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.description {
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+}
+
+.bgImage {
+    position: absolute;
+    z-index: -1;
+    opacity: .3;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,55 @@
+
+.wrapperContetn {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.title {
+    color: #32C1EA;
+    font-size: 100px;
+    font-weight: 400;
+    margin: 40px 0;
+}
+
+.wrapperDescription {
+    border: 2px dashed #32C1EA;
+}
+
+.wrapperDescription {
+    display: flex;
+    flex-direction: column;
+}
+
+.descriptionArticle  {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wrapperSubTitle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.subTitle {
+    color: #32C1EA;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.description {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+@media screen and (max-width:768px) {
+    
+    .wrapperSubTitle svg {
+        filter: invert(100%) sepia(12%) saturate(0%) hue-rotate(253deg) brightness(107%) contrast(101%);
+    }
+}

@@ -1,0 +1,65 @@
+.mobileMenu {
+    background-color: #001D4A;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    width: 100%;
+    z-index: 998;
+    padding: 20px 20px 0 20px;
+    animation-name: slideFromTop;
+    animation-duration: .3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.t {
+    top: 115px;
+}
+
+:has(.mobileMenu) body {
+    overflow: hidden;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.link {
+    font-size: 36px;
+    color: #32C1EA;
+    font-weight: 500;
+}
+
+.contactsInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.contactsInfo a {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.contactsInfo a span {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+@keyframes slideFromTop {
+    0% {
+      transform: translateY(-100vh);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+}

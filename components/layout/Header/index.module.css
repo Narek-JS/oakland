@@ -1,0 +1,287 @@
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+}
+
+/* All in the top panel in the first list */
+.topPart {
+    background-color: #001D4A;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.layoutForm {
+    height: 100vh;
+    width: 100%;
+    background-color: #001D4A;
+    position: fixed;
+    top: -100vh; /* Initial position off the screen */
+    left: 0;
+    z-index: 999;
+    display: flex;
+    padding: 20px 20px 0 20px;
+    animation-name: slideFromTop;
+    animation-duration: .3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+:has(.layoutForm) body {
+    overflow: hidden;
+}
+
+.homeHeaderDesktop .topPart {
+    background-color: transparent;
+}
+
+.topPartContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 81px;
+}
+
+.topPartContent p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.topPartContent p a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.homeHeaderDesktop .topPartContent p a {
+    color: #FFFFFF;
+}
+
+.partQouteBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.topPartQoute {
+    display: flex;
+    flex-direction: column;
+}
+
+.partQouteBlock p {
+    color: #32C1EA;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* All in the information psanel in the seccond list */
+.informationPanel {
+    background-color: #001D4A;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+
+.informationPanelFixed {
+    position: fixed;
+    z-index: 999;
+    animation-name: move;
+    animation-duration: .3s;
+    animation-timing-function: ease-in-out;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+}
+
+.informationPanelFixed .navBar .ul li,
+.informationPanelFixed .navBar .ul li a {
+    color: #001D4A;
+}
+
+.homeHeaderDesktop .informationPanel {
+    background-color: transparent;
+} 
+
+.homeHeaderDesktop .informationPanelFixed {
+    background-color: #FFFFFF;
+}
+
+.informationPanelFixed .informationPanelTitle,
+.informationPanelFixed .informationPaneldescription {
+    color: #001D4A;
+}
+
+.informationPanelContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.informationPanelLogoWrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.informationPanelTitleWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.informationPanelTitle {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.homeHeaderDesktop .informationPanelTitle {
+    color: #FFFFFF;
+}
+
+.homeHeaderDesktop .informationPanelFixed .informationPanelTitle {
+    color: #001D4A;
+}
+
+.informationPaneldescription {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.homeHeaderDesktop .informationPaneldescription {
+    color: #FFFFFF;
+}
+
+.homeHeaderDesktop .informationPanelFixed .informationPaneldescription {
+    color: #001D4A;
+}
+
+.burgerWrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    width: 50px;
+}
+
+.group p {
+    color: rgba(50, 193, 234, 0.6);
+    font-weight: 700;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+}
+
+.navBar .ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navBar .ul li,
+.navBar .ul li a {
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.homeHeaderDesktop .navBar .ul li,
+.homeHeaderDesktop .navBar .ul li a {
+    color: #FFFFFF;
+}
+
+.homeHeaderDesktop .informationPanelFixed .navBar .ul li,
+.homeHeaderDesktop .informationPanelFixed .navBar .ul li a {
+    color: #001D4A;
+}
+
+.activeLink,
+.navBar .ul li:hover {
+    border-bottom: 2px solid #32C1EA;
+    animation-name: fromOpacite;
+    animation-duration: .2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fromOpacite {
+    0% {
+        opacity: .7;
+        transform: scale(1);
+    } 
+    100% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+
+@keyframes slideFromTop {
+    0% {
+      top: -100vh;
+    }
+    100% {
+      top: 50px;
+    }
+}
+
+@keyframes move {
+    0% {
+       transform: translateY(-300px);
+    }
+    100% {
+       transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .topPartContent {
+        gap: 20px;
+    }
+    .topPartContent p a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .informationPanel {
+        padding-bottom: initial;
+    }
+    .topPart {
+        background-color: var(--headerTopbg);
+    }
+
+    .header {
+        position: initial;
+    }
+
+    .informationPanelTitle {
+        font-size: 20px;
+    }
+
+    .informationPaneldescription {
+        font-size: 12px;
+    }
+}

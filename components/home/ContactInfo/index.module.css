@@ -1,0 +1,100 @@
+.section {
+    padding: 50px 0;
+    background: #001D4A;
+}
+
+.content {
+    display: flex;
+    gap: 45px;
+}
+
+.information {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 80px;
+    color: #32C1EA;
+}
+
+.description {
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+.typeGroupWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.groupLine {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.typeTitle {
+    font-weight: 700;
+    font-size: 48px;
+    color: #32C1EA;
+}
+
+.typeDescription {
+    color: #FFFFFF;
+    text-decoration-line: underline;
+}
+
+@media screen and (max-width: 950px) {
+    .title {
+        font-size: 50px;
+    }
+    .description {
+        font-size: 16px;
+    }
+
+    .typeGroupWrapper {
+        gap: 30px;
+    }
+
+    .typeTitle {
+        font-size: 30px;
+    }
+
+    .typeDescription {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        gap: 23px;
+    }
+
+    .information {
+        gap: 20px;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .typeGroupWrapper {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .groupLine {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

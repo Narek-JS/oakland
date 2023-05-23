@@ -1,0 +1,95 @@
+
+.service {
+    max-width: 290px;
+    height: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px dashed #32C1EA;
+    padding: 20px 33px;
+}
+
+.serviceImage {
+    margin-bottom: 48px;
+    width: 80px;
+    height: 40px;
+}
+
+.carOut .wrapperImage {
+    width: 150px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #001D4A;
+    border: 2px dashed #32C1EA;
+    margin-top: -50px;
+}
+
+.carOut .wrapperImage .serviceImage  {
+    margin-bottom: initial;
+}
+
+.bigImage {
+    padding: 30px 33px;
+    height: 303px;
+}
+
+.serviceBigImage {
+    max-width: 280px;
+    max-height: 280px;
+}
+
+.serviceTitle {
+    color: #32C1EA;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    transition: all .15s;
+}
+
+.serviceTitle:hover {
+    transform: skewY(-1deg) skewX(-7deg) scale(1.1);
+    text-shadow: 0.5rem 1rem -2rem rgba(0, 0, 0, 0.2);
+}
+
+.serviceDescription {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.serviceLink {
+    color: #FFFFFF;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 18px;
+}
+
+.serviceLink svg {
+    filter: invert(88%) sepia(47%) saturate(0%) hue-rotate(331deg) brightness(108%) contrast(101%);
+}
+
+.serviceLink,
+.serviceLink:hover svg,
+.serviceLink:hover span {
+    transition: all .3s;
+}
+
+.serviceLink:hover svg {
+    transform: translateX(85px) rotate(-30deg);
+    filter: invert(88%) sepia(47%) saturate(0%) hue-rotate(331deg) brightness(108%) contrast(101%);
+}
+
+.serviceLink:hover span {
+    color: #32C1EA;
+    transform: translateX(-30px);
+    border-bottom: 1px solid #32C1EA;
+}

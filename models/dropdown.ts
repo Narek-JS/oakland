@@ -1,0 +1,1 @@
+export type DropdownItems = Array<{ link: string; label: string }>;
